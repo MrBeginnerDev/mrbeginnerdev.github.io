@@ -1,13 +1,61 @@
 body {
-    margin: 0 20px 0 20px;
-    background-color: #15173f;
-
+    background-image: linear-gradient(
+        to bottom,
+    #15173f 0%,
+    #15173f 25%,
+    #4A69E6 25%,
+    #4A69E6 50%,
+    #503391 50%,
+    #503391 75%,
+    #7F64CF 75%,
+    #7F64CF 100%);
+    height: 410vh;
+    margin: 0 0 0 0;
 }
+
+h1, p, h2 {
+    color: floralwhite;
+}
+
+#banner {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: #1A2A5A;
+    text-align: center;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    display: grid;
+    position: center;
+    width: 100%;
+    
+    }
 
 #Welcoming {
     font-family: 'Barlow Semi Condensed', sans-serif;
     text-align: left;
     margin: 0 0 0 1rem;
-    color: floralwhite;
+    margin-bottom: 200px;
+    padding-top: 15em;
     font-size: 40px;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-name: animate__fadeInLeft;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    width: 80%;
+}
+
+@keyframes animate__fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}  
+
+#preguntas {
+    padding-top: 200px;
 }
